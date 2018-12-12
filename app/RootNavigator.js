@@ -1,22 +1,24 @@
 
+
+
 import React from "react";
 import { View, Text } from "react-native";
 import { createStackNavigator, createAppContainer } from "react-navigation";
 
-import Header from './Header.js';
-import LoginForm from './LoginForm.js';
-
-
-
+class HomeScreen extends React.Component {
+  render() {
+    return (
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+        <Text>Home Screen</Text>
+      </View>
+    );
+  }
+}
 
 const AppNavigator = createStackNavigator({
   Home: {
-    screen: Header
-  },
-  Login: {
-    screen: LoginForm
-  },
-
+    screen: HomeScreen
+  }
 });
 
 export default createAppContainer(AppNavigator);
