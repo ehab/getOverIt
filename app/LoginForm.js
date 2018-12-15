@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 
-export default class LoginForm extends Component {
+class LoginForm extends Component {
   constructor(){
     super();
     this.state = {
@@ -14,7 +14,7 @@ export default class LoginForm extends Component {
     return(
       <View style = {headerStyle.header}>
         <Text style ={headerStyle.txt1}>
-          Login Page!
+          LoginForm Page!
         </Text>
       </View>
     );
@@ -37,4 +37,5 @@ const headerStyle = StyleSheet.create({
   },
 });
 
-//export default Header;
+//export default
+export default LoginForm;
